@@ -18,7 +18,7 @@ public class AbilityKeybind : MonoBehaviour {
 	void Update() {
         if(keyDisplay.text != (keybind - 48).ToString())
             keyDisplay.text = (keybind - 48).ToString();
-        if(Input.GetKeyDown(keybind))
+        if(Input.GetKeyDown(keybind) && PlayerPrefs.GetInt("console_show") != 1)
             button.onClick.Invoke();
     }
 }

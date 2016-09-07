@@ -25,10 +25,8 @@ public class NPCRandomWalking : MonoBehaviour {
         if(nationality == Nationality.COUNTRY.SWEDEN) {
             walkingSpeed -= 2f;
             runningSpeed -= 10f;
-        } else if(nationality == Nationality.COUNTRY.NORWAY) {
-            walkingSpeed += 2f;
-            runningSpeed += 5f;
-        } else if(nationality == Nationality.COUNTRY.ICELAND) {
+        } else if(nationality == Nationality.COUNTRY.NORWAY
+                  || nationality == Nationality.COUNTRY.ICELAND) {
             walkingSpeed += 2f;
             runningSpeed += 5f;
         }
